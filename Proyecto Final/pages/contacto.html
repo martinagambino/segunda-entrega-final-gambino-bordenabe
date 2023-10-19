@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menuheader">
+            <img src="/assests/img/logoexample.PNG" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/pages/nuestro-trabajo.html">NUESTRO TRABAJO</a></li>
+                    <li><a href="/pages/nuestro-compromiso.html">NUESTRO COMPROMISO</a></li>
+                    <li><a href="/pages/servicios.html">SERVICIOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="formconsulta">
+            <h1>RESERVA DE CONSULTA PERSONALIZADA</h1>
+            <form action="procesar form.php" method="post">
+                <div class="form-group">
+                    <label for="nombre-completo">Nombre completo</label>
+                    <input type="text" id="nombre-completo" name="nombre-completo" placeholder="Nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono celular</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Telefono celular">
+                </div>
+                <div class="form-group">
+                    <label for="horario">Día y horario de la reunión</label>
+                    <input type="datetime" id="horario" name="horario" placeholder="Dia y horario de la reunion">
+                </div>
+                <div class="form-group">
+                    <label for="consulta">Escribe aquí tu consulta</label>
+                    <textarea id="consulta" name="consulta" placeholder="Escribe aquí tu consulta"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

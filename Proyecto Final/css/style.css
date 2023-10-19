@@ -1,0 +1,433 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+header {
+    background-color: #E9E9E9;
+}
+main {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+/* FONDO HOME */
+.home {
+    background-image: url(/assests/img/FONDODEFINITIVO.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 1024px;
+}
+
+/* TITULO DOCUMENTAR HOME */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 150px;
+    color: #264080;
+}
+
+/* MENU HOME*/
+.menuhome ul{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuhome li{
+    padding: 10px;
+    border-bottom: 1px solid #1A2746;
+    list-style: none;
+}
+.menuhome li:last-child {
+    border-bottom: none;
+}
+.menuhome a {
+    text-decoration: none;
+    color: #494040;
+}
+
+/* MENU HEADER DE LAS PÁGINAS */
+.menuheader {
+    background-color: #F4F7FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.menuheader nav {
+    text-align: right;
+}
+
+.menuheader ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.menuheader ul li {
+    margin-right: 20px;
+}
+
+.menuheader a {
+    text-decoration: none;
+    color: #F4F7FF;
+    background-color: #264080;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.menuheader a:hover {
+    background-color: #2e3750;
+}
+
+
+
+/* FOOTER REDES SOCIALES */
+footer {
+    background-color: #C9C5C5;
+    color: #C9C5C5;
+    text-align: center;
+    padding: 50px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+/* NUESTRO TRABAJO */
+/* fondo nuestro trabajo */
+.nuestrotrabajo{
+    background-image: url(/assests/img/FONDONUESTROTRABAJO.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 1024px;
+}
+
+/* title y texto nuestro trabajo */
+.nuestrotrabajo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    color: #D9D9D9;
+}
+.nuestrotrabajo p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #D9D9D9;
+    text-align: center;
+}
+
+
+
+
+
+
+/* NUESTRO COMPROMISO */
+.contenedorcompromiso {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "textocompromiso fotocompromiso"
+    "fotovision textovision"
+    ;
+    background-color: #1A2746;
+}
+
+.fotocompromiso img, .fotovision img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Opcional: mantiene la relación de aspecto y recorta el contenido si es necesario */
+}
+
+/* FORMATO */
+/* titulo nuestro compromiso */
+.textocompromiso h1{
+    color: #F4F7FF;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* logos de clientes */
+.logosclientes{
+    display: flex;
+}
+.clientes1, .clientes2{
+    width: 100px;
+}
+/* texto nuestro compromiso */
+/* agrego enter al primer parrafo */
+.textocompromiso br {
+    content: "\00a0";
+    display: block;
+    margin-top: 20px;
+}
+/* titulos vision y valores */
+.textovision h2{
+    color: #F4F7FF;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* parrafos nuestro compromiso */
+.textocompromiso, .textovision {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    color: #D9D9D9;
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/* SERVICIOS */
+.servicios {
+    display: grid;
+    grid-template-rows: 40% 40%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "menuradicacion menuservicios"
+    "solucionintegral solucionintegral"
+}
+.servicios h1{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    color: #264080;
+}
+/* primer menu de servicios */
+.menuradicacion ul{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuradicacion li{
+    padding: 10px;
+    border-bottom: 1px solid #1A2746;
+    list-style: none;
+}
+.menuradicacion li:last-child {
+    border-bottom: none;
+}
+.menuradicacion a {
+    text-decoration: none;
+    color: #494040;
+}
+.menuradicacion a:hover {
+    background-color: #d5d7db;
+}
+/* segundo menu de servicios */
+.menuservicios ul{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;  
+    list-style: none;
+    padding: 100px;
+}
+.menuservicios li{
+    padding: 10px;
+    border-bottom: 1px solid #1A2746;
+    list-style: none;
+}
+.menuservicios li:last-child {
+    border-bottom: none;
+}
+.menuservicios a {
+    text-decoration: none;
+    color: #494040;
+}
+.menuservicios a:hover {
+    background-color: #d5d7db;
+}
+/* FORMATO */
+.solucionintegral p, .solucionintegral nav, .solucionintegral h2, .menuradicacion, .menuservicios{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-size: 100%;
+    color: #000000;
+    padding: 10px;
+}
+
+
+
+
+
+/* CONTACTO */
+.formconsulta h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.formconsulta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* para que se complete con lo que se tiene que completar */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="datetime"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button[type="submit"] {
+    background-color: #2e4864;
+    color: #b0d2ff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* desktop min 1024 etsa se evalua*/
+/* tablet min 576px and max 991px */
+/* mobile min 320px and max 480px esta se evalua*/
+
+/* DISEÑO RESPONSIVE*/
+/* HOME */
+@media (max-width: 480px) {
+    .home{
+        background-color: #C9C5C5;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .menuhome li {
+        padding: 5px;
+    }
+}
+/* MENU HEADER DE LAS PAGINAS */
+@media (max-width: 768px) {
+    .menuheader nav{
+        flex-direction: column; /* Apilar elementos verticalmente */
+        align-items: flex-end; /* Alinear elementos a la derecha */
+    }
+
+    .menuheader ul {
+        flex-direction: column; /* Apilar elementos de la lista verticalmente */
+    }
+
+    .menuheader ul li {
+        padding: 10px;
+        margin-right: 0; /* Eliminar el margen entre elementos de la lista */
+    }
+    .menuheader img{
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        height: 80px;
+        margin-left: 0;
+    }
+}
+/* NUESTRO TRABAJO */
+@media (max-width: 480px) {
+    .nuestrotrabajo h1 {
+        font-size: 36px;
+    }
+    .nuestrotrabajo p {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .nuestrotrabajo {
+        height: auto;
+    }
+}
+/* NUESTRO COMPROMISO */
+@media (max-width: 480px) {
+    .contenedorcompromiso {
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "textocompromiso"
+            "fotocompromiso"
+            "textovision"
+            "fotovision";
+    }
+
+    .textocompromiso h1 {
+        font-size: 30px;
+    }
+
+    .logosclientes {
+        align-items: center;
+    }
+
+    .clientes1, .clientes2 {
+        width: 80px;
+        height: auto;
+    }
+
+    .textocompromiso br {
+        margin-top: 10px;
+    }
+
+    .textovision h2 {
+        font-size: 24px;
+    }
+
+    .textocompromiso,.textovision {
+        padding: 20px;
+    }
+}
+/* RESPONSIVE SERVICIOS CON BOOSTRAP */
